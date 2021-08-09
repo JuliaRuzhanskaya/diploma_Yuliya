@@ -1,0 +1,487 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.catalog {
+    background: #FCFAF6;
+}
+
+.collection {
+    display: block;
+    text-align: center;
+    padding-top: 7.3rem;
+    margin-bottom: 1.3rem;
+
+    &__info {
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 1.67;
+        max-width: 477px;
+        letter-spacing: 1.2px;
+        color: $c-primary;
+        margin-bottom: 18px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__we-make {
+        font-size: 18px;
+        line-height: 1.61;
+        max-width: 441px;
+        color: $c-text;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+.products {
+    display: flex;
+    text-align: center;
+    margin-bottom: 105px;
+    justify-content: space-between;
+}
+
+.bowls {
+
+    &__design {
+        background: url(../imgs/oval1.png) center no-repeat;
+        background-size: contain;
+        margin-right: 63px;
+        margin-bottom: 29px;
+    }
+
+    &__design:hover {
+        transform: scale(1.1);
+    }
+
+    &__title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-primary;
+        margin-bottom: 4px;
+    }
+
+    &__title:hover {
+        color: #C87B5E;
+        text-decoration: underline;
+    }
+
+    &__price {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        color: $c-secondary;
+        margin-bottom: 6px;
+    }
+
+    &__description {
+        font-size: 11px;
+        line-height: 1.78;
+        letter-spacing: 0.2px;
+        color: $c-secondary;
+        margin-bottom: 41px;
+        max-width: 161px;
+        display: inline-block;
+    }
+
+    &__decor {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.glasses {
+
+    &__design {
+        background: url(../imgs/oval2.png) center no-repeat;
+        background-size: contain;
+        margin-right: 63px;
+        margin-bottom: 21px;
+    }
+
+    &__design:hover {
+        transform: scale(1.1);
+    }
+
+    &__title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-primary;
+        margin-bottom: 4px;
+    }
+
+    &__title:hover {
+        color: #C87B5E;
+        text-decoration: underline;
+    }
+
+    &__price {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        color: $c-secondary;
+        margin-bottom: 6px;
+    }
+
+    &__description {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+        color: $c-secondary;
+        margin-bottom: 21px;
+        max-width: 181px;
+        display: inline-block;
+    }
+
+    &__decor {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.plates {
+
+    &__design {
+        background: url(../imgs/oval3.png) center no-repeat;
+        background-size: contain;
+        margin-right: 37px;
+        margin-bottom: 29px;
+    }
+
+    &__design:hover {
+        transform: scale(1.1);
+    }
+
+    &__title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-primary;
+        margin-bottom: 4px;
+    }
+
+    &__title:hover {
+        color: #C87B5E;
+        text-decoration: underline;
+    }
+
+    &__price {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        color: $c-secondary;
+        margin-bottom: 6px;
+    }
+
+    &__description {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.51;
+        letter-spacing: 0.2px;
+        color: $c-secondary;
+        margin-bottom: 41px;
+        max-width: 170px;
+        display: inline-block;
+    }
+
+    &__decor {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.pan {
+
+    &__design {
+        background: url(../imgs/oval4.png) center no-repeat;
+        background-size: contain;
+        margin-top: 85px;
+    }
+
+    &__design:hover {
+        transform: scale(1.1);
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-primary;
+        margin-bottom: 4px;
+    }
+
+    &__title:hover {
+        color: #C87B5E;
+        text-decoration: underline;
+    }
+
+    &__price {
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        color: $c-secondary;
+        margin-bottom: 6px;
+    }
+
+    &__description {
+        font-size: 13px;
+        line-height: 1.51;
+        letter-spacing: 0.2px;
+        color: $c-secondary;
+        margin-bottom: 21px;
+        max-width: 184px;
+        display: inline-block;
+    }
+
+    &__decor {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: $sm) {
+
+    .collection {
+        padding-top: 5.3rem;
+        margin-bottom: 1.3rem;
+    
+        &__info {
+            font-size: 30px;
+        }
+    
+        &__we-make {
+            font-size: 16px;
+            max-width: 429px;
+        }
+    }
+    
+    .products {
+        flex-direction: column;
+        margin-bottom: 65px;
+    }
+    
+    .bowls {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        align-items: center;
+
+        &__design {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            margin-bottom: 0;
+        }
+    
+        &__title {
+            display: block;
+            text-align: center;
+        }
+    
+        &__price {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    
+        &__description {
+            font-size: 11px;
+            margin-bottom: 21px;
+            max-width: 161px;
+        }
+    }
+    
+    .glasses {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        align-items: center;
+    
+        &__design {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            margin-bottom: 0;
+        }
+    
+        &__price {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    
+        &__description {
+            font-size: 14px;
+            margin-bottom: 21px;
+            max-width: 181px;
+        }
+    }
+    
+    .plates {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        align-items: center;
+    
+        &__design {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            margin-bottom: 0;
+        }
+    
+        &__title {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+    
+        &__price {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    
+        &__description {
+            font-size: 13px;
+            margin-bottom: 21px;
+            max-width: 170px;
+        }
+    }
+    
+    .pan {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        align-items: center;
+    
+        &__design {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+    
+        &__title {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+    
+        &__price {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    
+        &__description {
+            font-size: 13px;
+            margin-bottom: 21px;
+            max-width: 184px;
+        }
+    }
+}
+
+@media only screen and (max-width: $xs) {
+
+    .collection {
+        padding-top: 3.3rem;
+    
+        &__info {
+            font-size: 21px;
+            margin: 0 3rem 2rem 3rem;
+        }
+    
+        &__we-make {
+            font-size: 13px;
+            max-width: 348px;
+        }
+    }
+    
+    .products {
+        flex-direction: column;
+        margin-bottom: 65px;
+    }
+    
+    .bowls {
+
+        &__design {
+            max-width: 200px;
+        }
+    
+        &__description {
+            margin-bottom: 16px;
+        }
+
+        &__decor {
+            max-width: 8rem;
+        }
+    }
+    
+    .glasses {
+    
+        &__design {
+            max-width: 200px;
+        }
+    
+        &__description {
+            font-size: 11px;
+            margin-bottom: 16px;
+        }
+
+        &__decor {
+            max-width: 13rem;
+        }
+    }
+    
+    .plates {
+
+        &__design {
+            max-width: 200px;
+        }
+    
+        &__description {
+            font-size: 11px;
+        }
+
+        &__decor {
+            max-width: 8rem;
+        }
+    }
+    
+    .pan {
+    
+        &__design {
+            max-width: 200px;
+        }
+    
+        &__title {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+    
+        &__price {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    
+        &__description {
+            font-size: 11px;
+        }
+
+        &__decor {
+            max-width: 20rem;
+        }
+    }
+}

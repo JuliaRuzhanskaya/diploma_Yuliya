@@ -1,0 +1,103 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.bottom {
+    background: #807C62;
+}
+
+.important {
+    padding-top: 20px;
+    padding-bottom: 26px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+
+    &__company {
+        font-size: 14px;
+        line-height: 1.94;
+        color: rgba(252, 250, 246, 0.5);
+        margin-right: 66rem;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.94;
+        color: rgba(252, 250, 246, 0.5);
+    }
+
+    &__link:hover {
+        color: $c-text2;
+        text-decoration: underline;
+    }
+
+
+    &__link--click {
+        background: #FCFAF6;
+        border-radius: 5px;
+        padding: 0 3.3rem 0 3.3rem;
+    }
+
+    &__disabled {
+        display: block;
+        margin: 3.5px 0 3.5px 0;
+    }
+}
+
+@media only screen and (max-width: $sm) {
+    
+    .important {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+    
+    .name {
+        
+        &__company {
+            font-size: 12px;
+            margin-right: 30rem;
+        }
+    
+        &__link {
+            font-size: 12px;
+        }
+    
+        &__link--click {
+            padding: 0 2.7rem 0 2.7rem;
+        }
+    
+        &__disabled {
+            margin: 3px 0 3px 0;
+        }
+    } 
+}
+
+@media only screen and (max-width: $xs) {
+
+    .important {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .name {
+        
+        &__company {
+            font-size: 10px;
+            margin-right: 6rem;
+        }
+    
+        &__link {
+            font-size: 10px;
+        }
+    
+        &__link--click {
+            padding: 0 1.5rem 0 1.5rem;
+        }
+    
+        &__disabled {
+            max-width: 1rem;
+            margin: 4px 0 4px 0;
+        }
+    } 
+}

@@ -1,0 +1,147 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.additionally {}
+
+@keyframes shadow2 {
+    from {text-shadow: 0 0 3px #000;}
+    50% {text-shadow: 0 0 50px #000;}
+    to {text-shadow: 0 0 3px #000;}
+}
+
+.container-add {
+    max-width: 144px;
+    padding: 0;
+}
+
+.additionally_info {
+    display: flex;
+}
+
+.first-pic {
+
+    &__first-one {}
+}
+
+.dirty-dishes {
+    min-width: 39rem;
+    background: #F5F1E9;
+    padding-top: 102px;
+    display: block;
+    text-align: center;
+
+    &__hashtag {
+        font-size: 11px;
+        line-height: 1.85;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $c-primary;
+        margin-bottom: 30px;
+    }
+
+    &__meaning {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.92;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $c-primary;
+        margin-bottom: 72px;
+    }
+
+    &__link {
+        background: #FFFFFF;
+        border: 1px solid rgba(170, 160, 152, 0.29);
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-text;
+        padding: 19px 41px 23px 41px;
+        max-width: 100px;
+        animation: shadow2 3s infinite ease-in-out;
+    }
+
+    &__link:hover {
+        color: #C87B5E;
+    }
+}
+
+.last-pic {   
+
+    &__second-one {}
+
+}
+
+@media only screen and (max-width: $sm) {
+
+    .first-pic {
+
+        &__first-one {
+            max-width: 25.45rem;
+        }
+    }
+
+    .dirty-dishes {
+        max-height: 26rem;
+        min-width: 25.85rem;
+        padding-top: 5rem;
+
+        &__hashtag {
+            font-size: 11px;
+            margin-bottom: 2rem;
+        }
+
+        &__meaning {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 3rem 4rem 3rem;
+        }
+
+        &__link {
+            font-size: 11px;
+            padding: 10px 25px;
+        }
+    }
+
+    .last-pic {   
+
+        &__second-one {
+            max-width: 25.45rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $xs) {
+
+    .additionally_info {
+        flex-direction: column;
+    }
+
+    .first-pic {
+
+        &__first-one {
+            max-width: 42.5rem;
+        }
+    }
+
+    .dirty-dishes {
+        min-width: 42.5rem;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+
+        &__link {
+            font-size: 11px;
+        }
+    }
+
+    .last-pic {   
+
+        &__second-one {
+            max-width: 42.5rem;
+        }
+    }
+}

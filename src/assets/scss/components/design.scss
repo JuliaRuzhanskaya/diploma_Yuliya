@@ -1,0 +1,62 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.design {
+    background: #FBF6EA;
+    border-radius: 0px;
+}
+
+.first_section {
+    padding-top: 70px;
+
+    &__description {
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 1.37;
+        text-align: center;
+        color: $c-primary;
+        margin-bottom: 53px;
+    }
+
+    &__colors {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: $sm) {
+
+    .first_section {
+        padding-top: 50px;
+    
+        &__description {
+            font-size: 30px;
+            line-height: 1.37;
+            margin-bottom: 35px;
+        }
+    
+        &__colors {
+             margin-bottom: 45px;
+        }
+    }  
+}
+
+@media only screen and (max-width: $xs) {
+
+    .first_section {
+        padding-top: 50px;
+    
+        &__description {
+            font-size: 22px;
+            padding: 0 25px 0 25px;
+            margin-bottom: 35px;
+        }
+    
+        &__colors {
+            margin-bottom: 45px;
+            width: 30rem;
+        }
+    }
+}

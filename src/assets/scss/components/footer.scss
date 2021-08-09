@@ -1,0 +1,414 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.footer {
+    background: #6C674D;
+}
+
+@keyframes shadow2 {
+    from {text-shadow: 0 0 3px #000;}
+    50% {text-shadow: 0 0 50px #000;}
+    to {text-shadow: 0 0 3px #000;}
+}
+
+.content {
+    display: flex;
+    padding-top: 8rem;
+}
+
+.follow {
+    margin-right: 31.1rem;
+
+    &__title {
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 2.51;
+        letter-spacing: 0.7px;
+        color: $c-text2;
+        margin-bottom: 1.1rem;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+        color: $c-text2;
+        margin-bottom: 6.2rem;
+    }
+}
+
+.email {
+    display: flex;
+
+    &__write {
+        background: #FCFAF6;
+        max-width: 30rem;
+    }
+
+    &__send {
+        background: #FCFAF6;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 4.45;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-text;
+        padding: 0 2rem;
+        animation: shadow2 3s infinite ease-in-out;
+    }
+}
+
+.navigation {}
+
+.useful-links {}
+
+.shop {
+    margin-bottom: 17rem;
+    margin-right: 2.8rem;
+
+    &__top {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-text2;
+        margin-bottom: 0.9rem;
+    }
+
+    &__list {}
+
+    &__link {
+        margin-bottom: 0.9rem;
+    }
+
+    &__link:hover {
+        transform: translateX(5px);
+    }
+
+
+    &__click {
+        font-size: 16px;
+        line-height: 1.91;
+        color: rgba(245, 241, 233, 0.6);
+    }
+
+    &__click:hover {
+        color: $c-text2;
+    }
+}
+
+.countries {
+    padding-bottom: 12.3rem;
+
+    &__location {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-text2;
+        margin-bottom: 0.9rem;
+    }
+
+    &__img1 {
+        margin-right: 2.4rem;
+    }
+
+    &__img2 {}
+}
+
+.company  {
+    margin-right: 6.6rem;
+
+    &__top {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-text2;
+        margin-bottom: 0.9rem;
+    }
+
+    &__list {}
+
+    &__link {
+        margin-bottom: 0.9rem;
+    }
+
+    &__link {
+        transform: translateX(5px);
+    }
+
+    &__click {
+        font-size: 16px;
+        line-height: 1.91;
+        color: rgba(245, 241, 233, 0.6);
+    }
+
+    &__click:hover {
+        color: $c-text2
+    }
+}
+
+.social  {
+
+    &__top {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $c-text2;
+        margin-bottom: 0.9rem;
+    }
+
+    &__list {}
+
+    &__link {
+        margin-bottom: 0.9rem;
+    }
+
+    &__link:hover {
+        transform: translateX(5px);
+    }
+
+    &__click {
+        font-size: 16px;
+        line-height: 1.91;
+        color: rgba(245, 241, 233, 0.6);
+    }
+
+    &__click:hover {
+        color: $c-text2
+    }
+}
+
+@media only screen and (max-width: $sm) {
+
+    .content {
+        display: flex;
+        padding-top: 5rem;
+    }
+    
+    .follow {
+        margin-right: 12rem;
+    
+        &__title {
+            font-size: 20px;
+            line-height: 2.51;
+            letter-spacing: 0.7px;
+            margin-bottom: 1.1rem;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 1.71;
+            margin-bottom: 6.2rem;
+        }
+    }
+    
+    .email {
+    
+        &__write {
+            max-width: 30rem;
+        }
+    
+        &__send {
+            font-size: 12px;
+            line-height: 3.5;
+            padding: 0 2rem;
+        }
+    }
+    
+    .shop {
+        margin-bottom: 6rem;
+        margin-right: 5rem;
+    
+        &__top {
+            font-size: 12px;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.9rem;
+        }
+    
+        &__list {}
+    
+        &__link {
+            margin-bottom: 0.9rem;
+        }
+    
+        &__click {
+            font-size: 14px;
+        }
+    }
+    
+    .countries {
+        padding-bottom: 4rem;
+    
+        &__location {
+            font-size: 12px;
+            margin-bottom: 0.9rem;
+        }
+    
+        &__img1 {
+            max-width: 4rem;
+            margin-right: 1rem;
+        }
+    
+        &__img2 {
+            max-width: 4rem;
+        }
+    }
+    
+    .company  {
+        margin-right: 5rem;
+    
+        &__top {
+            font-size: 12px;
+            margin-bottom: 0.9rem;
+        }
+    
+        &__list {}
+    
+        &__link {
+            margin-bottom: 0.9rem;
+        }
+    
+        &__click {
+            font-size: 14px;
+        }
+    }
+    
+    .social  {
+        margin-right: 3rem;
+    
+        &__top {
+            font-size: 12px;
+            margin-bottom: 0.9rem;
+        }
+    
+        &__list {}
+    
+        &__link {
+            margin-bottom: 0.9rem;
+        }
+    
+        &__click {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: $xs) {
+
+    .content {
+        padding-top: 3rem;
+        flex-direction: column;
+    }
+    
+    .follow {
+        margin-right: 10rem;
+    
+        &__title {
+            font-size: 14px;
+            margin-bottom: 1.1rem;
+        }
+    
+        &__text {
+            font-size: 10px;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .email {
+        margin-bottom: 4rem;
+
+        &__write {
+            max-width: 17rem;
+        }
+    
+        &__send {
+            font-size: 11px;
+            line-height: 3;
+            padding: 0 1rem;
+        }
+    }
+    
+    .shop {
+        margin-bottom: 4rem;
+        margin-right: 3rem;
+    
+        &__top {
+            font-size: 11px;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+    
+        &__list {}
+    
+        &__link {
+            margin-bottom: 0.5rem;
+        }
+    
+        &__click {
+            font-size: 11px;
+        }
+    }
+    
+    .countries {
+        padding-bottom: 4rem;
+    
+        &__location {
+            font-size: 11px;
+            margin-bottom: 0.5rem;
+        }
+    
+        &__img1 {
+            max-width: 3.5rem;
+            margin-right: 0.5rem;
+        }
+    
+        &__img2 {
+            max-width: 3.5rem;
+        }
+    }
+    
+    .company  {
+        margin-right: 8rem;
+    
+        &__top {
+            font-size: 11px;
+            margin-bottom: 0.5rem;
+        }
+        
+        &__link {
+            margin-bottom: 0.5rem;
+        }
+    
+        &__click {
+            font-size: 11px;
+        }
+    }
+    
+    .social  {
+        margin-right: 1rem;
+    
+        &__top {
+            font-size: 11px;
+            margin-bottom: 0.5rem;
+        }
+    
+        &__list {}
+    
+        &__link {
+            margin-bottom: 0.5rem;
+        }
+    
+        &__click {
+            font-size: 11px;
+        }
+    } 
+}

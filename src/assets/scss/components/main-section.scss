@@ -1,0 +1,136 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.main {
+    background-image: url('../imgs/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@keyframes shadow1 {
+    from {text-shadow: 0 0 4px #FFF;}
+    50% {text-shadow: 0 0 70px #FFF;}
+    to {text-shadow: 0 0 4px #FFF;}
+}
+
+.main-section {
+    padding-top: 151px;
+    padding-left: 344px;
+
+    &__small-text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $c-primary;
+        padding-bottom: 5px;
+    }
+
+    &__heading {
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 1.44;
+        letter-spacing: 1px;
+        color: $c-primary;
+    }
+
+    &__heading-decor {
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 1.44;
+        letter-spacing: 1px;
+        color: $c-primary;
+        text-decoration-line: underline;
+        padding-bottom: 52px;
+        margin-top: -23px;
+    }
+
+    &__orange-btn {
+        background: #D37657;
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.7;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: inline-block;
+        padding: 17px 45px;
+        animation: shadow1 3s infinite ease-in;
+    }
+
+    &__orange-btn:hover {
+        color: $c-primary;
+    }
+
+}
+
+@media only screen and (max-width: $sm) {
+
+    .main {
+        height: 80vh;
+    }
+
+    .main-section {
+        padding-top: 85px;
+        padding-left: 180px;
+    
+        &__small-text{
+            font-size: 14px;
+        }
+    
+        &__heading {
+            font-size: 40px;
+            line-height: 1.24;
+            margin-bottom: 15px;
+        }
+    
+        &__heading-decor {
+            font-size: 40px;
+            line-height: 1.24;
+            padding-bottom: 55px;
+        }
+    
+        &__orange-btn {
+            font-size: 11px;
+            line-height: 1.5;
+            padding: 15px 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: $xs) {
+
+    .main {
+        height: 60vh;
+    }
+
+    .main-section {
+        padding-top: 40px;
+        padding-left: 100px;
+    
+        &__small-text{
+            font-size: 11px;
+            padding-bottom: 5px;
+        }
+    
+        &__heading {
+            font-size: 27px;
+            line-height: 1.24;
+            margin-bottom: 21px;
+        }
+    
+        &__heading-decor {
+            font-size: 27px;
+            line-height: 1.24;
+            padding-bottom: 30px;
+        }
+    
+        &__orange-btn {
+            font-size: 10px;
+            line-height: 1.5;
+            padding: 13px 25px;
+        }
+    }
+}

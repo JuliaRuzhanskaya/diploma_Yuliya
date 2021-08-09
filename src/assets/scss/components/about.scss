@@ -1,0 +1,75 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.about {
+    // background: #FCFAF6;
+    // padding: 61px 0 70px 130px;
+    
+    &__information {
+        padding: 61px 0 70px 130px;
+        display: flex;
+    }
+
+    &__welcom {
+        font-weight: bold;
+        font-size: 41px;
+        line-height: 1.13;
+        text-align: center;
+        letter-spacing: 1.25px;
+        color: $c-primary;
+        max-width: 400px;
+        padding-right: 135px;
+    }
+
+    &__about-us {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.67;
+        color: $c-text;
+        max-width: 650px;
+    }
+}
+
+@media only screen and (max-width: $sm) {
+
+    .about {
+        
+        &__information {
+            padding: 56px 0 56px 105px;
+            display: flex;
+        }
+
+        &__welcom {
+            font-size: 35px;
+            line-height: 1.13;
+            letter-spacing: 1.25px;
+            padding-top: 25px;
+            padding-right: 110px;
+        }
+    }
+}
+
+@media only screen and (max-width: $xs) {
+
+    .about {
+        
+        &__information {
+            padding: 45px 30px 65px 30px;
+            flex-direction: column;
+        }
+
+        &__welcom {
+            font-size: 25px;
+            line-height: 1.13;
+            letter-spacing: 1.25px;
+            padding: 0 33px 30px 33px;
+        }
+    
+        &__about-us {
+            font-size: 16px;
+            line-height: 1.67;
+            text-align: center;
+            padding: 0 20px 0 20px;
+        }
+    }
+}

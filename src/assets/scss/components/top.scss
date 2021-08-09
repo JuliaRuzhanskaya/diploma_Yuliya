@@ -1,0 +1,42 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.top {
+    background: #F0EEDD;
+    border-radius: 0px;
+
+    &__text{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.7;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #670A18;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: $sm) {
+
+    .top {
+        &__text {
+            font-size: 11px;
+            line-height: 1.4;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+    } 
+}
+
+@media only screen and (max-width: $xs) {
+
+    .top {
+        &__text {
+            font-size: 8px;
+            line-height: 1.1;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    } 
+}

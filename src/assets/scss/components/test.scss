@@ -1,0 +1,302 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+
+.test {
+    position: relative;
+    background: #FBF6EA;
+}
+
+.elements {
+    padding-bottom: 10.4rem;
+
+    &__design {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__character-first {
+        font-size: 12px;
+        line-height: 1.29;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-secondary;
+        max-width: 135px;
+        position: absolute;
+        left: 25rem;
+        top: 7.8rem;
+    }
+
+    &__character-second {
+        font-size: 12px;
+        line-height: 1.29;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-secondary;
+        max-width: 107px;
+        position: absolute;
+        left: 34rem;
+        top: 35rem;
+    }
+
+    &__character-third {
+        font-size: 12px;
+        line-height: 1.29;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-secondary;
+        max-width: 172px;
+        position: absolute;
+        left: 25rem;
+        top: 47rem;
+    }
+
+    &__character-fourth {
+        font-size: 12px;
+        line-height: 1.29;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-secondary;
+        max-width: 158px;
+        position: absolute;
+        left: 78rem;
+        top: 3rem;
+    }
+
+    &__character-fifth {
+        font-size: 12px;
+        line-height: 1.29;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-secondary;
+        max-width: 171px;
+        position: absolute;
+        left: 76.5rem;
+        top: 29rem;
+    }
+
+    &__character-sixth {
+        font-size: 12px;
+        line-height: 1.29;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-secondary;
+        max-width: 160px;
+        position: absolute;
+        left: 82rem;
+        top: 44rem;
+    }
+
+    &__rectangle-first {
+        position: absolute;
+        left: 42.9rem;
+        top: 9.1rem;
+    }
+
+    &__rectangle-second {
+        position: absolute;
+        left: 48.5rem;
+        bottom: 24.8rem;
+    }
+
+    &__rectangle-third {
+        position: absolute;
+        left: 50rem;
+        bottom: 12.5rem;
+    }
+
+    &__rectangle-fourth {
+        position: absolute;
+        right: 50rem;
+        top: 10.8rem;
+    }
+
+    &__rectangle-fifth {
+        position: absolute;
+        right: 61rem;
+        top: 29.5rem;
+    }
+
+    &__rectangle-sixth {
+        position: absolute;
+        right: 50.5rem;
+        bottom: 23.3rem;
+    }
+}
+
+@media only screen and (max-width: $sm) {
+
+    .elements {
+        padding-bottom: 10.4rem;
+    
+        &__design {
+            width: 370px;
+        }
+    
+        &__character-first {
+            font-size: 11px;
+            max-width: 134px;
+            left: 7rem;
+            top: 3.8rem;
+        }
+    
+        &__character-second {
+            font-size: 11px;
+            left: 14rem;
+            top: 24rem;
+        }
+    
+        &__character-third {
+            font-size: 11px;
+            max-width: 163px;
+            left: 6rem;
+            top: 31rem;
+        }
+    
+        &__character-fourth {
+            font-size: 11px;
+            max-width: 157px;
+            left: 44rem;
+            top: 2rem;
+        }
+    
+        &__character-fifth {
+            font-size: 11px;
+            left: 43.5rem;
+            top: 18rem;
+        }
+    
+        &__character-sixth {
+            font-size: 11px;
+            max-width: 160px;
+            left: 49rem;
+            top: 30rem;
+        }
+    
+        &__rectangle-first {
+            left: 22.9rem;
+            top: 5.7rem;
+            max-width: 8px;
+        }
+    
+        &__rectangle-second {
+            left: 25.3rem;
+            bottom: 19.8rem;
+            max-width: 8px;
+        }
+    
+        &__rectangle-third {
+            left: 29rem;
+            bottom: 10.9rem;
+            max-width: 8px;
+        }
+    
+        &__rectangle-fourth {
+            right: 27rem;
+            top: 6.8rem;
+            max-width: 8px;
+        }
+    
+        &__rectangle-fifth {
+            right: 34.2rem;
+            top: 18.5rem;
+            max-width: 8px;
+        }
+    
+        &__rectangle-sixth {
+            right: 24.5rem;
+            bottom: 19.3rem;
+            max-width: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: $xs) {
+
+    .elements {
+        padding-bottom: 7rem;
+    
+        &__design {
+            width: 250px;
+        }
+    
+        &__character-first {
+            font-size: 8px;
+            max-width: 97px;
+            left: 2rem;
+            top: 1.8rem;
+        }
+    
+        &__character-second {
+            font-size: 8px;
+            max-width: 80px;
+            left: 5rem;
+            top: 16rem;
+        }
+    
+        &__character-third {
+            font-size: 8px;
+            max-width: 119px;
+            left: 2rem;
+            top: 23rem;
+        }
+    
+        &__character-fourth {
+            font-size: 8px;
+            max-width: 114px;
+            left: 25.7rem;
+            top: 1.5rem;
+        }
+    
+        &__character-fifth {
+            font-size: 8px;
+            max-width: 151px;
+            left: 23.5rem;
+            top: 13rem;
+        }
+    
+        &__character-sixth {
+            font-size: 8px;
+            max-width: 160px;
+            left: 28rem;
+            top: 20rem;
+        }
+    
+        &__rectangle-first {
+            left: 10.5rem;
+            top: 3.9rem;
+            max-width: 5px;
+        }
+    
+        &__rectangle-second {
+            left: 12.3rem;
+            bottom: 16.8rem;
+            max-width: 5px;
+        }
+    
+        &__rectangle-third {
+            left: 15rem;
+            bottom: 10.9rem;
+            max-width: 5px;
+        }
+    
+        &__rectangle-fourth {
+            right: 14rem;
+            top: 4.9rem;
+            max-width: 5px;
+        }
+    
+        &__rectangle-fifth {
+            right: 18.4rem;
+            top: 13rem;
+            max-width: 5px;
+        }
+    
+        &__rectangle-sixth {
+            right: 12.5rem;
+            bottom: 16.3rem;
+            max-width: 5px;
+        }
+    }
+}
